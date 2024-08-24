@@ -63,9 +63,9 @@ iframe {
     top: 0;
     left: 0;
     background: white;
-    display: none; // 初始設為隱藏
     overflow: hidden;
-    z-index: 1000;
+    z-index: -1; /* 初始狀態為不可見 */
 }
+
 
 /* 其他樣式不變 */
