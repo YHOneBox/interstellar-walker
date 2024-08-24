@@ -1,7 +1,9 @@
 document.getElementById('openGame').addEventListener('click', function() {
-    document.getElementById('gameContainer').style.display = 'block'; // 顯示遊戲
+    var gameContainer = document.getElementById('gameContainer');
+    gameContainer.style.zIndex = 1000; // 將遊戲放到最上層
 });
 
 document.getElementById('closeGame').addEventListener('click', function() {
-    document.getElementById('gameContainer').style.display = 'none'; // 隱藏遊戲，不重新加載
+    var gameContainer = document.getElementById('gameContainer');
+    gameContainer.style.zIndex = -1; // 將遊戲放到最底層
 });
