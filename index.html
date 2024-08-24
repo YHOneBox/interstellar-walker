@@ -7,12 +7,12 @@
 </head>
 <body>
     <div class="container">
-        <button id="openGame">開始遊戲</button>
-        <div id="gameContainer" class="game-container">
-            <div id="closeGame" class="close-button">✖</div>
-            <!-- 這裡可以放置Unity的WebGL遊戲的iframe或其他元素 -->
-            <iframe src="unity game/index.html" frameborder="0"></iframe>
-        </div>
+        <button id="openGame">打開遊戲</button>
+    </div>
+    <div id="gameContainer" class="game-container">
+        <div id="closeGame" class="close-button">✖</div>
+        <!-- Unity WebGL iframe -->
+        <iframe id="gameFrame" src="unity game/index.html" frameborder="0"></iframe>
     </div>
     <script src="script.js"></script>
 </body>
